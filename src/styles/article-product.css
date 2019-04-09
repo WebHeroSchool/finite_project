@@ -1,0 +1,173 @@
+/* второй экран */
+.page-product {
+  background: #FAE8E4;
+
+  &__content {
+    justify-content: space-evenly;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  &__img {
+    margin-right: 13.2%;
+    position: relative;
+  }
+
+  &__wrap {
+    margin-right: 20px;
+    margin-bottom: 25px;
+    z-index: 10;
+  }
+}
+
+.product-img--position--front {
+  position: relative;
+  top: -13px;
+  left: 30.5%;
+  z-index: 1;
+}
+
+.product-img--position--back {
+  position: absolute;
+  top: 20.5%;
+  left: 14.5%;
+}
+
+.product-card {
+  background: white;
+  max-width: 368px;
+  padding: 40px 65px 44px 55px;
+  box-shadow: 20px 40px 120px -50px rgba(0,0,0,0.5);
+}
+
+.title{
+  font-weight: bold;
+  line-height: 41px;
+  font-size: 40px;
+  margin: 6px 0;
+}
+
+.subtitle {
+  font-weight: bold;
+  line-height: 16px;
+  font-size: 16px;
+  letter-spacing: 0.07em;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.product-card__subtitle {
+  margin-bottom: 61px;
+}
+
+.product-card__text {
+  height: 182px;
+  max-width: 368px;
+  min-width: 252px;
+  color: rgba(0,0,0,0.5);
+}
+
+.product-form__color-and-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.select-color {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__item {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50%;
+    margin-right: 12px;
+    cursor: pointer;
+  }
+
+  & :nth-child(1) {
+    background: #DEDEDE;
+  }
+
+  & :nth-child(2) {
+    background: #F29F9F;
+  }
+
+  & :nth-child(3) {
+    background: #A8BFF9;
+  }
+
+  & :nth-child(4) {
+    background: #90BD8F;
+  }
+
+  &__item:hover {
+    transform: scale(1.2); 
+  }
+}
+
+.price__value {
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 40px;
+  margin-right: 11px;
+}
+
+.container-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.counter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 147px;
+  height: 44px;
+  border: 1.5px solid black;
+  box-sizing: border-box;
+  font: 500 normal 15px;
+  margin-right: 15px;
+}
+
+.counter-btn__minus,
+.counter-btn__plus {
+  cursor: pointer;
+}
+
+.total-look-form__button,
+.product-form__button {
+  width: 100%;
+  min-width: 203px;
+}
+
+.product-content-other {
+  display: grid;
+  position: relative;
+  top: 40px;
+  left: 5px;
+  grid-template-columns: 236px minmax(25px, 1fr);
+}
+
+.other__arrow {
+  background: url(../images/arrow.png) right center no-repeat;
+  height: 16px;
+
+  &--position {
+    transform: translateX(-10px);
+  }
+
+  &--position-total {
+    transform: translateX(3px);
+  }
+}
+
+.page-product__ancord {
+  position: absolute;
+  top: 0;
+  height: 0;
+}

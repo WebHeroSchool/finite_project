@@ -143,7 +143,7 @@ gulp.task( 'lint', [ 'stylelint', 'eslint'] );
 gulp.task( 'browserSync', () => {
   browserSync.init({
     server: {
-        baseDir: "./"
+        baseDir: './build'
     }
   });
 
@@ -152,10 +152,11 @@ gulp.task( 'browserSync', () => {
   gulp.watch( paths.handlebars, ['compile-watch'] );
 } );
 
-gulp.task( 'watch', () => {
   gulp.task( 'js-watch', [ 'build-js' ], () => browserSync.reload() );
   gulp.task( 'css-watch', [ 'build-css' ], () => browserSync.reload() );
   gulp.task( 'compile-watch', ['compile'], () => browserSync.reload() );
+
+gulp.task( 'watch', () => {  
   gulp.watch( paths.contextJson )
     .on( 'change', browserSync.reload );
   gulp.watch( `${paths.build.dir}/**/*` )
@@ -179,9 +180,8 @@ gulp.task('clean-build', () => {
     .pipe(clean());
 });
 
-gulp.task( 'build', [ 'build-js', 'build-css', 'build-fonts', 'build-images', 'compile']  );
+gulp.task( 'build', [ 'build-js', 'build-css', 'build-fonts', 'build-images', 'compile'] );
 
 gulp.task( 'default', ['build'] );
 gulp.task( 'dev', ['build', 'browserSync'] );
 gulp.task( 'prod', ['build'] );
-
