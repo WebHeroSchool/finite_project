@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>LOCO</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
+<!--подключение jquery через google-->
+  </head>
+  <body>
+<!-- первый экран -->
+    <article class="page page-promo">
+      <div class="page__left-block">
+        <header class="page__header header">
+          <span class="header__logo">LOCO</span>
+<!-- выбор языка -->
+          <div class="header__lang-switcher lang-switcher">
+            <span class="lang-switcher__value">RU</span>
+            <span class="lang-switcher__lang-arrow"></span>
+          </div>
+        </header>
+        <footer class="page-promo__footer footer">
+          <div class="footer__social social ">
+            <a class="social__item social__item--inst" href="#"></a>
+            <a class="social__item social__item--vk" href="#"></a>
+            <a class="social__item social__item--fb" href="#"></a>
+          </div>
+        </footer>
+      </div>
+<!-- меню -->
+      <nav class="page__menu menu">
+        <div class="menu__icon">
+          <input type="checkbox"  id="menu__check">
+          <label  for="menu__check"></label>
+          <span class="menu__icon-item menu__icon-item--first"></span>
+          <span class="menu__icon-item menu__icon-item--second"></span>
+          <span class="menu__icon-item menu__icon-item--third"></span>
+          <span class="menu__icon-item menu__icon-item--fourth"></span>
+        </div>
+      </nav>
+      <article class="right-block">
+        <div class="page-promo__content content">
+          <img class="page-promo__img" src="img/loco-girl.jpg" alt="Новая коллекция">
+          <section class="page__info info">
+            <h1 class="info__title">Новая коллекция</h1>
+            <p class="info__text">
+              Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.
+            </p>
+            <button class="info__read-btn button">Читать дальше</button>
+            <div class="other info__other" id="scroll">
+             <a class="other__link other__link--img" href="#">Другие предложения</a>
+            </div>
+          </section>
+        </div>
+      </article>
+      <a class="scroll page__scroll" href="#page-product" id="scroll"></a>
+    </article>
+<!-- второй экран -->
+    <article class="page page-product">
+      <a class="page-product__ancord" id="page-product"></a>
+      <div class="page-product__content content">
+        <div class="product-img product-content__img">
+          <div class="product-img__box product-img--position--front">
+            <img class="product-img__item" src="img/bag-pink.png" alt="Розовый клатч">
+          </div>
+          <div class="product-img__box product-img--position--back">
+            <img class="product-img__item product-img__item--invisible" src="img/bag-gray.png" alt="Серый клатч">
+          </div>
+        </div>
+        <div class="page-product__wrap">
+          <section class="product-card product-content__card">
+            <h2 class="product-card__title title">Кожаный клатч</h2>
+            <h3 class="product-card__subtitle subtitle">Осенняя коллекция</h3>
+            <p class="product-card__text">
+              Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.
+            </p>
+            <form class="product-form product-card__form">
+              <div class="product-form__color-and-price">
+                <div class="select-color product-form__select-color">
+                  <span class="select-color__item"></span>
+                  <span class="select-color__item  select-color__item--checked"></span>
+                  <span class="select-color__item"></span>
+                  <span class="select-color__item"></span>
+                </div>
+                <div class="price product-form__price">
+                  <span class="price__value">1990₽</span>
+                </div>
+              </div>
+              <div class="container-buttons">
+                <div class="counter-btn product-form__counter-btn">
+                  <span class="counter-btn__minus">-</span>
+                  <span class="counter-btn__value">1</span>
+                  <span class="counter-btn__plus">+</span>
+                </div>
+                <button class="button product-form__button">Добавить в корзину</button>
+              </div>
+            </form>
+          </section>
+          <div class="other product-content-other">
+            <a class="other__link product-content-other__link" href="#">Другие товары на loco.com</a>
+            <div class="other__arrow other__arrow--position"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+<!-- третий экран -->
+    <article class="page-total-look page">
+      <div class="total-look-content content">
+        <div class="total-look-img__wrap">
+          <img class="total-look-img" src="img/clot.jpg" alt="Serene Total Look">
+        </div>
+        <div class="page-total-look__wrap">
+          <section class="total-look-card">
+          <h2 class="total-look-card__title title">Serene Total Look</h2>
+          <h3 class="total-look-card__subtitle subtitle">Осенняя коллекция</h3>
+          <p class="total-look-card__text">
+            Джинсы, свитер, обувь.<br>
+            В комплект также входит пакет ароматного чая и кружка.
+          </p>
+          <form class="total-look-form container-buttons">
+            <div class="counter-btn total-look-form__counter-btn">
+              <span class="counter-btn__minus">-</span>
+              <span class="counter-btn__value">1</span>
+              <span class="counter-btn__plus">+</span>
+            </div>
+            <button class="button total-look-form__button">Добавить в корзину</button>
+          </form>
+          </section>
+          <div class="other total-look-other">
+            <a class="total-look-other__link other__link" href="#">Другие товары на loco.com</a>
+            <div class="other__arrow other__arrow--position-total"></div>
+          </div>
+        </div>
+      </div>
+      <footer class="copyright page-total-look__footer">
+          <span class="copyright__text">Разработано в</span>
+          <a class="copyring__link" href="http://whs.getcourse.ru/teach/control">
+            <img class="copyright-whs" src="img/webhero.png" alt="WebHeroSchool">
+          </a>
+      </footer>
+    </article>
+    <script type="text/javascript" src="js/scroll.js"></script>
+  </body>
+</html>

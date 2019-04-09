@@ -1,0 +1,17 @@
+{
+  "rules": {
+    "color-no-invalid-hex": true,
+
+    "font-weight-notation": "named-where-possible",
+
+    "font-family-no-duplicate-names": true,
+
+    "comment-no-empty": true,
+
+    "value-no-vendor-prefix": true,
+
+    "color-named": "always-where-possible",
+
+    "length-zero-no-unit": true
+  }
+}
