@@ -19,8 +19,8 @@ You must have installed: `node`, `npm`, `gulp`.
 
 ##How to work with this project
 
-1. `git clone https://github.com/WebHeroSchool/build.git app`
-2. `cd build`
+1. `git clone https://github.com/WebHeroSchool/finite_project.git app`
+2. `cd finite_project`
 3. `npm i`
 4. `gulp` 
 ... or
@@ -33,11 +33,13 @@ You must have installed: `node`, `npm`, `gulp`.
 ## Project structure
 
 * `src/` 
-    - `fonts/` 
+    - `fonts/`
+    - `images/` 
+    - `scripts/`
     - `styles/` default and font styles
     - `templates/`
       - `template/`
-        - `images/` files using template (svg, png)
+        - `images/` 
         - `template.css` template styles
         - `template.hbs` template
         - `template.js` template script
@@ -46,6 +48,6 @@ You must have installed: `node`, `npm`, `gulp`.
       - `index.js` entry-point scripts (template)
       - `test.json` handlebars context
 * `build/` build directory 
-* `config.js` configuration file 
+* `gulpfile.js` configuration file 
 * `eslintrc.json` eslint rules
 * `stylelintrc.json` stylilint rules
