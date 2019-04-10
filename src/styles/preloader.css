@@ -26,7 +26,7 @@
   }
 }
 
-done {
+.done {
   opacity: 0;
   visibility: hidden;
 }
@@ -39,7 +39,8 @@ done {
   height: 60px; 
   position: absolute;
   bottom: 15%;
-  animation: .5s souslik-runing steps(1) infinite;  
+  animation: .5s souslik-runing steps(1) infinite;
+  filter: grayscale(30%); 
 }
 
 @keyframes souslik-runing {
