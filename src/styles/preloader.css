@@ -13,20 +13,20 @@
 .souslic-wrap {
   height: 100%;
   width: 100%;
-  animation: 5s souslik-run infinite;
+  animation: 5s souslik-run infinite ease-in;
 }
 
 @keyframes souslik-run {
   from {
-    transform: translateX(100%);
+    transform: translateX(-20%);
   }
 
   to {
-    transform: translateX(-100%);
+    transform: translateX(90%);
   }
 }
 
-.done {
+done {
   opacity: 0;
   visibility: hidden;
 }
