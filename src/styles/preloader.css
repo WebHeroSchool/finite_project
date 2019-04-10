@@ -1,0 +1,73 @@
+.preloader {
+  background: inline('night-wood.gif') black center no-repeat;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  transition: 1s all;
+  opacity: 1;
+  visibility: visible;
+}
+
+.souslic-wrap {
+  height: 100%;
+  width: 100%;
+  animation: 5s souslik-run infinite;
+}
+
+@keyframes souslik-run {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.done {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader {
+  background: inline('souslik-run.png') no-repeat;
+  background-position: top;
+  background-size: 81%;
+  width: 200px;
+  height: 60px; 
+  position: absolute;
+  bottom: 15%;
+  animation: .5s souslik-runing steps(1) infinite;  
+}
+
+@keyframes souslik-runing {
+  from {
+    background-position: top;
+  }
+
+  14% {
+    background-position: center 15%;
+  }
+
+  28% {
+    background-position: center 30%;
+  }
+
+  42% {
+    background-position: center 46%;
+  }
+
+  70% {
+    background-position: center 62%;
+  }
+
+  88% {
+    background-position: center 79%;
+  }
+
+  100% {
+    background-position: center 98%;
+  }
+}
